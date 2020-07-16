@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 
 typedef struct Element{
     int data;
@@ -59,8 +58,9 @@ int main() {
     prepend(2, &head);
     prepend(3, &head);
     prepend(4, &head);
+    shift(head);
 
-    printf("%d\n", count(head));
+    printf("%d\n", count(head)); // 3
     
     return 0;
 }
